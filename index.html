@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Football Tournament Announcement</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  :root {
+    --primary-color: #e63946;
+    --secondary-color: #1d3557;
+    --accent-color: #f4a261;
+    --background-gradient: linear-gradient(135deg, #1d3557, #457b9d);
+    --gold: #ffd700;
+    --silver: #c0c0c0;
+    --cup-color: #ffffffcc;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-gradient);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  .container {
+    background: rgba(29,53,87,0.85);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+  .subheading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #f1faee;
+  }
+  .stakes {
+    background: var(--cup-color);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 8px var(--cup-color);
+  }
+  .prizes {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .prizes h2 {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  .prize-item {
+    background: rgba(244,162,97,0.15);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1faee;
+    box-shadow: inset 0 0 10px rgba(244,162,97,0.3);
+  }
+  .prize-item span.amount {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+  }
+  .medals {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .medal {
+    text-align: center;
+  }
+  .medal-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
+  .gold {
+    background: var(--gold);
+  }
+  .silver {
+    background: var(--silver);
+  }
+  .cup-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    filter: drop-shadow(0 0 3px #f4a261aa);
+  }
+  footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #a8dadccc;
+  }
+  @media (max-width: 520px) {
+    .container {
+      padding: 1.25rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .prize-item {
+      font-size: 1rem;
+    }
+    .medal-circle {
+      width: 50px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <div class="cup-icon" aria-label="Cup Trophy">🏆</div>
+    <h1>Football Tournament</h1>
+    <p class="subheading">Join the battle for glory!</p>
+    <div class="stakes" aria-label="Tournament Stakes">
+      Total Prize Stake: <strong>R20,000</strong> + Cup + Gold & Silver Medals
+    </div>
+    <section class="prizes" aria-labelledby="prizes-title">
+      <h2 id="prizes-title">Prize Distribution</h2>
+      <div class="prize-item" aria-label="First place prize">
+        🥇 1st Place
+        <span class="amount">R10,000</span>
+      </div>
+      <div class="prize-item" aria-label="Second place prize">
+        🥈 2nd Place
+        <span class="amount">R5,000</span>
+      </div>
+      <div class="prize-item" aria-label="Third place prize for two teams">
+        🥉 3rd Place (Two Winners)
+        <span class="amount">R2,500 each</span>
+      </div>
+    </section>
+    <div class="medals" aria-label="Medals">
+      <div class="medal">
+        <div class="medal-circle gold" aria-hidden="true">🥇</div>
+        <div>Gold Medal</div>
+      </div>
+      <div class="medal">
+        <div class="medal-circle silver" aria-hidden="true">🥈</div>
+        <div>Silver Medal</div>
+      </div>
+    </div>
+    <footer>
+      &copy; 2024 Football Tournament. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
+
