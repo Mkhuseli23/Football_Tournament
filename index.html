@@ -61,12 +61,24 @@
   .joining-contact {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 2rem;
-    color: #fbbf24; /* warm gold for visibility */
+    margin-bottom: 1rem;
+    color: #fbbf24;
     line-height: 1.4;
   }
   .joining-contact strong {
     color: #fff;
+  }
+  .tournament-dates,
+  .registration-link {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #f1faee;
+    line-height: 1.4;
+  }
+  .registration-link a {
+    color: #fbbf24;
+    text-decoration: underline;
+    font-weight: 600;
   }
   .stakes {
     background: var(--cup-color);
@@ -167,36 +179,43 @@
     <div class="cup-icon" aria-label="Cup Trophy">🏆</div>
     <h1>Football Tournament</h1>
     <p class="subheading">Join the battle for glory!</p>
-    <p class="location" aria-label="Tournament location">Location: Bulala Sport ground</p>
-    <p class="joining-contact" aria-label="Joining fee and contact information">
-      Joining Fee: <strong>R650</strong><br/>
-      Contact Numbers: <strong>0784436995 / 0641989079</strong>
+    <p class="location">Location: Bulala Sport Ground</p>
+    <p class="joining-contact">
+      Joining Fee: <strong>R650</strong><br />
+      Contact Numbers: <strong>0784436995 / 0641989079 / 0632058257 / 0731799348</strong>
     </p>
-    <div class="stakes" aria-label="Tournament Stakes">
+    <p class="tournament-dates">
+      Match Date: <strong>20 December 2025</strong><br />
+      Draw Date: <strong>10 December 2025</strong>
+    </p>
+    <p class="registration-link">
+      Register your team here: <a href="https://tournament-ivory.vercel.app/" target="_blank">https://tournament-ivory.vercel.app/</a>
+    </p>
+    <div class="stakes">
       Total Prize Stake: <strong>R20,000</strong> + Cup + Gold & Silver Medals
     </div>
     <section class="prizes" aria-labelledby="prizes-title">
       <h2 id="prizes-title">Prize Distribution</h2>
-      <div class="prize-item" aria-label="First place prize">
+      <div class="prize-item">
         🥇 1st Place
         <span class="amount">R10,000</span>
       </div>
-      <div class="prize-item" aria-label="Second place prize">
+      <div class="prize-item">
         🥈 2nd Place
         <span class="amount">R5,000</span>
       </div>
-      <div class="prize-item" aria-label="Third place prize for two teams">
+      <div class="prize-item">
         🥉 3rd Place (Two Winners)
         <span class="amount">R2,500 each</span>
       </div>
     </section>
-    <div class="medals" aria-label="Medals">
+    <div class="medals">
       <div class="medal">
-        <div class="medal-circle gold" aria-hidden="true">🥇</div>
+        <div class="medal-circle gold">🥇</div>
         <div>Gold Medal</div>
       </div>
       <div class="medal">
-        <div class="medal-circle silver" aria-hidden="true">🥈</div>
+        <div class="medal-circle silver">🥈</div>
         <div>Silver Medal</div>
       </div>
     </div>
@@ -206,6 +225,3 @@
   </div>
 </body>
 </html>
-
-
-    
